@@ -1,0 +1,75 @@
+$firstColor: rgba(0, 0, 0, .9);
+$secondColor: #fff;
+$iconSize: 2rem;
+.gallery{
+    .card{
+        cursor: pointer;
+    }
+}
+.galleryShadow{
+    display: none;
+    transition: ease all .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $firstColor;    
+}
+.galleryModal{
+    transform: scale(0);
+    transition: ease all .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    .galleryContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            border: 10px solid #fff;
+            border-radius: 10px;
+        }
+        .galleryText{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 100%;
+            color: $secondColor;
+            text-align: center;
+        }
+    }
+    .galleryIcon{
+        position: absolute;
+        font-size: $iconSize;
+        width: $iconSize;
+        height: $iconSize;
+        text-align: center;
+        color: $secondColor;
+    }
+    .gIquit{
+        right: 10px;
+        top: 10px;
+    }
+    .gIleft{
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%)
+    }
+    .gIright{
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%)
+    }
+}

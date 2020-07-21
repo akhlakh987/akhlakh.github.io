@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JMI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="folder/assets/js/jquery.animated-bg.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<div class=" animated-bg" style="height: 250px;">  
+  <nav class="navbar navbar-expand-md  navbar-dark py-3 px-5" style="background-color: rgba(200,0,0);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-bolder">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">Events</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  <br>
+  
+<h2 class="text-center" style="padding-top: 10px;color: green;font-weight: bold;">
+  <marquee >JAMIA MILLIA ISLAMIA</marquee></h2>
+  <h5  data-aos="zoom-in" class="text-center" style="color:red;font-style: italic;">B-Tech First-Year (Section-B)</h5>
+
+  <h6  data-aos="zoom-in" class="text-center" style="color:red;font-style: italic;">Batch : 2019-23</h6>
+
+
+</div>
+
+<style>
+  .modalcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  color: red;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  transform: translate(-50%, -50%);
+}
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+</style>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>      
+      <div class="modal-body">
+        <div class="modalcontainer">
+          <img src="folder/images/24.png" style="height: 350px;width:100%;z-index: -1;">
+          <div class="centered" style="font-family: 'Bowlby One SC', cursive;">
+            <p>WELCOME</p>
+            <p>TO</p>
+            <p>B-TECH FIRST YEAR</p>
+            <p>SECTION- B</p>
+            <p>BATCH 2019-23</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+  AOS.init();
+  $(document).ready(function(){
+    $('.animated-bg').animatedbg({
+      colors : ["red","blue","green","black"],
+      numParticles: 100,
+    });
+  });
+  $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+  </script>
+
+
+
+<div id="home">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="folder/images/1.jpeg" alt="Los Angeles" class="img-responsive"  width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="folder/images/3.jpg" alt="Chicago" class="img-responsive"  width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="folder/images/4.jpeg" alt="New York" class="img-responsive"  width="1100" height="500">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+<div id="section1" style="padding-top:70px;padding-bottom:70px" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12" >
+        <img  data-aos="fade-right" src="folder/images/img4.jpg"  class="img-fluid rounded-circle mx-auto d-block" style="width: 300px;height: 300px;margin-top: 100px;">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 " >
+          <ul>
+            <h1  data-aos="zoom-in" class="text-center text-danger" style="margin-top:80px;font-weight: bolder;font-size: 50px;">About me</h1>
+            <li    data-aos="fade-up" style="list-style-type: none;margin-top:30px;" class="py-2"><span style="font-weight: bolder;font-size:25px;">Name: </span> <span style="font-size: 20px;" >Akhlakh Ahmed</span></li>
+            <li    data-aos="fade-up" style="list-style-type: none;" class="py-2"><span style="font-weight:  bolder;font-size:25px;">Branch:      </span> <span style="font-size: 20px;">Electronics and Communication</span></li>
+            <li    data-aos="fade-up" style="list-style-type: none;" class="py-2"><span style="font-weight:  bolder;font-size:25px;">College:      </span> <span style="font-size: 20px;">Jamia Millia Islamia (JMI)</span></li>
+            <li    data-aos="fade-up"  style="list-style-type: none;" class="py-2"><span style="font-weight: bolder;font-size:25px;">Date of birth:</span> <span style="font-size: 20px;">July 03, 2001</span></li>
+            <li    data-aos="fade-up"  style="list-style-type: none;" class="py-2"><span style="font-weight: bolder;font-size:25px;">Address:      </span> <span style="font-size: 20px;">Kushinagar (U.P.)</span></li>
+            <li    data-aos="fade-up"  style="list-style-type: none;" class="py-2"><span style="font-weight: bolder;font-size:25px;">Email:        </span> <span style="font-size: 15px;">akhlakhahmed987@gmail.com</span></li>
+          </ul>    
+        </div>
+    </div>
+  </div>    
+</div>
+
+
+
+
+
+<div id="section2" class="container-fluid"  style="padding-top:70px;padding-bottom:70px;margin-top: -30px;background-color:lightgreen;">
+  <h1   data-aos="zoom-in" class="text-center text-danger" style="font-weight: bolder;">Education</h1>      
+  <div class="container py-5" >
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12" >
+        <div>
+          <h2 data-aos="fade-up"   style="color: blue;"> 2006-2016</h2>
+          <h3 data-aos="fade-up"  style="font-weight: bolder;">Primary Education</h3>
+          <h4 data-aos="fade-up"  class="position text-muted">Midas School of Learning</h4>
+         </div>           
+      </div>
+      <div class="col-lg-4 col-md-4 col-12" >
+        <div>
+          <h2  data-aos="fade-up"   style="color: blue;" > 2016-2018</h2>
+          <h3  data-aos="fade-up"  style="font-weight: bolder;">Secondary Education</h3>
+          <h4  data-aos="fade-up"  class="position text-muted">Sayyid Hammid Senior Secondary School,AMU</h4>
+         </div>                       
+      </div>
+      <div class="col-lg-4 col-md-4 col-12" >
+        <div>
+          <h2  data-aos="fade-up"  style="color: blue;"> 2019-2023</h2>
+          <h3  data-aos="fade-up" style="font-weight: bolder;">Undergraduate(Electronics and Communication Engineering)</h3>
+          <h4  data-aos="fade-up" class="position text-muted">Jamia Millia Islamia (JMI)</h4>
+        </div>                   
+      </div>
+    </div>
+</div>  
+
+<div class="container-fluid" style="padding-top: 100px;">
+  <h1  data-aos="zoom-in" class="text-center" style="font-weight: bolder;">Skills</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <div>
+        <h4>HTML</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:80%;">80%</div>
+        </div>
+        <h4>CSS</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:75%">75%</div>
+        </div>
+        <h4>JAVASCRIPT</h4>
+        <div class="progress" >
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:50%">50%</div>
+        </div>
+      </div>           
+    </div>
+    <div class="col-sm-6">
+             <div>
+               <h4>C (Programming Language)</h4>
+               <div class="progress" >
+                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:75%">75%</div>
+               </div>
+               <h4 >C++ (Programming Language)</h4>
+               <div class="progress" >
+                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:60%">60%</div>
+               </div>
+               <h4>Python(Programming Language)</h4>
+               <div class="progress">
+                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:50%">50%</div>
+               </div>
+              </div>                       
+     </div>
+  </div>
+</div>
+</div> 
+
+
+
+<div class="container-fluid py-5" style="background-color: black;color: white;">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12" >
+      <div>
+        <h2   data-aos="zoom-in" style="color:red;font-weight: bolder;text-decoration: underline;" class="text-center">Message to Teacher</h2>
+        <div class="py-5" style="font-style: oblique;">
+          <p  data-aos="fade-up" class="text-center">Teachers are the ultimate inspiration for the rest of the journey of a student's life.</p>
+          <p  data-aos="fade-up" class="text-center">It is an important role played in shaping for a student bright future.
+          Thank you for being my teacher and guiding and shaping my life.</p>
+          <p  data-aos="fade-up" class="text-center">Farewell to you.</p>
+          </div>
+       </div>           
+    </div>
+    <div class="col-lg-6 col-md-6 col-12" >
+      <div>
+        <h2   data-aos="zoom-in" style="color: red;font-weight: bolder;text-decoration: underline;" class="text-center">Message to Friends</h2>
+        <div  class="py-2"  style="font-style: oblique;">
+          <p  data-aos="fade-up" class="text-center">There just doesn't to be an easy way for me to say good-bye to you....</p>
+          <p  data-aos="fade-up" class="text-center">We've shared so much life and laughter that is really hard to imagine.</p>
+          <p  data-aos="fade-up" class="text-center">What things will be like without you here.</p>
+          <p  data-aos="fade-up" class="text-center">I'm so greatful for the good times we've shared... </p>
+          <p  data-aos="fade-up" class="text-center">And whether I'll think of you,as often will,it'll be the memories</p>
+          <p  data-aos="fade-up" class="text-center">Of the times that I'll keep coming back to... </p>
+          <p  data-aos="fade-up" class="text-center">Those times,those thoughts of you....</p>
+          <p  data-aos="fade-up" class="text-center">Will always stay in  my mind and in my Heart...</p>
+          <p  data-aos="fade-up" class="text-center">No matter how far you are.....</p>
+        </div>
+       </div>                       
+    </div>
+  </div>
+</div>  
+
+
+<div class="container-fluid" style="text-align: center;background: linear-gradient(lightblue,white);">
+  <div style="padding-top: 50px;">
+    <h2 class="py-2" style="color: red;text-decoration: underline;margin-bottom: 50px;padding-top: 50px;">Events</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-xs-12"  data-aos="fade-up">
+      <h2>JMI Intro</h2>
+      <a href="https://youtu.be/LLRZXL04zmU" >
+        <button class="btn-danger " style="width: 200px;height: 50px;border-radius: 50px;margin-top: 20px;" >Click Here</button></a>
+    </div>
+    <div class="col-sm-3 col-xs-12"  data-aos="fade-up">
+      <h2>Teachers Day</h2>
+      <a href="https://youtu.be/g_q3yduCLlE">
+        <button class="btn-success " style="width: 200px;height: 50px;border-radius: 50px;margin-top: 20px;" >Click Here</button></a>
+    </div>
+    <div class="col-sm-3 col-xs-12"  data-aos="fade-up">
+      <h2>Friendship Video</h2>
+      <a href="https://youtu.be/gfCFtwPI9eU">
+        <button class="btn-primary " style="width: 200px;height: 50px;border-radius: 50px;margin-top: 20px;" >Click Here</button></a>
+    </div>
+    <div class="col-sm-3 col-xs-12"  data-aos="fade-up">
+      <h2>Fresher's Party</h2>
+      <a href="page3.html">
+        <button class="btn-warning " style="width: 200px;height: 50px;border-radius: 50px;margin-top: 20px ;" >Click Here</button></a>
+    </div>
+  </div>
+</div>
+
+<footer style="background: rgb(33, 35, 49)!important;;margin-top:100px;padding-top: 100px;padding-bottom: 100px;" class="text-center" >
+  <div class="row" >
+    <div class="col-sm-6 col-xs-12"  data-aos="fade-up" style="border-right: 3px dotted gray;">
+      <h2 style="text-align: center;">
+        <img src="folder/images/logo.jpeg" style="width: 100px;height: 100px;border-radius: 50%;" >
+      </h2>
+      <div style="color: white;">
+        <h2 >Jamia Millia Islamia</h2>
+        <h4>Jamia Nagar,Delhi,India</h4>
+      </div>
+      <div style="padding-top:20px;"  data-aos="fade-up">
+        <a href="https://www.facebook.com/jmiofficial"><i  class='fa fa-facebook'  style='color:blue;  font-size:30px;padding-left: 20px;'></i></a>
+        <a href="https://www.linkedin.com/in/jmiofficial/"><i  class='fa fa-linkedin'  style='color:blue;  font-size:30px;padding-left: 20px;'></i></a>
+        <a href="https://www.instagram.com/jamiamilliaislamia_official/"><i  class="fa fa-instagram" style="color:red;font-size:30px;padding-left: 20px;"></i>  </a>
+        <a href="https://www.youtube.com/channel/UCZOGZZ8jpsnBUffIL-47UZw"><i  class="fa fa-youtube" style="color:red;font-size:30px;padding-left: 20px;"></i>  </a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <div  data-aos="fade-up" style="color: white;margin-top: 50px;" class="font-weight-bolder">
+        <h3>About me</h3>
+        <div style="padding-top: 5px;">
+          <h4 style="padding-top: 5px;">Name : Akhlakh Ahmed</h4>
+          <h4 style="padding-top: 5px;">Email : akhlakhahmed987@gmail.com</h4>
+        </div>
+      </div>
+      <div  data-aos="fade-up" style="padding-top: 15px;">
+        <a href="https://www.facebook.com/a.ahmed.965928"><i class='fa fa-facebook'  style='color:blue;  font-size:30px;padding-left: 20px;'></i></a>
+        <a href="https://www.linkedin.com/in/a-ahmed-7a4a951a8"><i class='fa fa-linkedin'  style='color:blue;  font-size:30px;padding-left: 20px;'></i></a>
+        <a href="https://instagram.com/akhlakh__ahmed?igshid=139v4jcdb16ky"><i class="fa fa-instagram" style="color:red;font-size:30px;padding-left: 20px;"></i> </a> 
+      </div>
+
+    </div>
+  </div>  
+</footer>
+
+
+
+
+</body>
+</html>
